@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+
+    <style>
+        .nav {
+            background-color: #409EFF;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .title {
+            color: white;
+        }
+        
+        .btn_group {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .output_wrap {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .el-scrollbar__wrap {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<script>
+    function FuckPass(t, e) {
+        var n = function(t, e, n, i, r, o, l, s, a, u, c, h, p, f) {
+            var d = Array.prototype.slice.call(arguments);
+            return f = d.shift(),
+                d.reverse().map(function(t, e) {
+                    return String.fromCharCode(t - f - 47 - e)
+                }).join("")
+        }(11, 120, 116, 116, 107, 102, 102, 121, 107, 160, 161, 156) + 399..toString(36).toLowerCase() + 29..toString(36).toLowerCase().split("").map(function(t) {
+            return String.fromCharCode(t.charCodeAt(0) + -71)
+        }).join("") + function(t, e, n, i, r) {
+            var o = Array.prototype.slice.call(arguments),
+                l = o.shift();
+            return o.reverse().map(function(t, e) {
+                return String.fromCharCode(t - l - 23 - e)
+            }).join("")
+        }(36, 103, 103, 117, 103) + 27..toString(36).toLowerCase().split("").map(function(t) {
+            return String.fromCharCode(t.charCodeAt(0) + -39)
+        }).join("") + 25..toString(36).toLowerCase().split("").map(function(t) {
+            return String.fromCharCode(t.charCodeAt(0) + -71)
+        }).join("") + 21..toString(36).toLowerCase().split("").map(function(t) {
+            return String.fromCharCode(t.charCodeAt(0) + -13)
+        }).join("") + function(t, e, n) {
+            var i = Array.prototype.slice.call(arguments),
+                r = i.shift();
+            return i.reverse().map(function(t, e) {
+                return String.fromCharCode(t - r - 48 - e)
+            }).join("")
+        }(25, 178, 159) + 30331..toString(36).toLowerCase();
+
+        function i(t, e, n, i, r, o) {
+            return a(function(t, e) {
+                return t << r | t >>> 32 - r
+            }(a(a(e, t), a(i, o))), n)
+        }
+
+        function r(t, e, n, r, o, l, s) {
+            return i(e & n | ~e & r, t, e, o, l, s)
+        }
+
+        function o(t, e, n, r, o, l, s) {
+            return i(e & r | n & ~r, t, e, o, l, s)
+        }
+
+        function l(t, e, n, r, o, l, s) {
+            return i(e ^ n ^ r, t, e, o, l, s)
+        }
+
+        function s(t, e, n, r, o, l, s) {
+            return i(n ^ (e | ~r), t, e, o, l, s)
+        }
+
+        function a(t, e) {
+            var n = (65535 & t) + (65535 & e);
+            return (t >> 16) + (e >> 16) + (n >> 16) << 16 | 65535 & n
+        }
+
+        var u, c = ((new Date).getTime() + e) / 6e4;
+        return function(t) {
+            for (var e, n = "0123456789ABCDEF", i = "", r = 0; r < t.length; r++)
+                e = t.charCodeAt(r),
+                i += n.charAt(e >>> 4 & 15) + n.charAt(15 & e);
+            return i
+        }(function(t) {
+            for (var e = "", n = 0; n < 32 * t.length; n += 8)
+                e += String.fromCharCode(t[n >> 5] >>> n % 32 & 255);
+            return e
+        }(function(t, e) {
+            t[e >> 5] |= 128 << e % 32,
+                t[14 + (e + 64 >>> 9 << 4)] = e;
+            for (var n = 1732584193, i = -271733879, u = -1732584194, c = 271733878, h = 0; h < t.length; h += 16) {
+                var p = n,
+                    f = i,
+                    d = u,
+                    m = c;
+                i = s(i = s(i = s(i = s(i = l(i = l(i = l(i = l(i = o(i = o(i = o(i = o(i = r(i = r(i = r(i = r(i, u = r(u, c = r(c, n = r(n, i, u, c, t[h + 0], 7, -680876936), i, u, t[h + 1], 12, -389564586), n, i, t[h + 2], 17, 606105819), c, n, t[h + 3], 22, -1044525330), u = r(u, c = r(c, n = r(n, i, u, c, t[h + 4], 7, -176418897), i, u, t[h + 5], 12, 1200080426), n, i, t[h + 6], 17, -1473231341), c, n, t[h + 7], 22, -45705983), u = r(u, c = r(c, n = r(n, i, u, c, t[h + 8], 7, 1770035416), i, u, t[h + 9], 12, -1958414417), n, i, t[h + 10], 17, -42063), c, n, t[h + 11], 22, -1990404162), u = r(u, c = r(c, n = r(n, i, u, c, t[h + 12], 7, 1804603682), i, u, t[h + 13], 12, -40341101), n, i, t[h + 14], 17, -1502002290), c, n, t[h + 15], 22, 1236535329), u = o(u, c = o(c, n = o(n, i, u, c, t[h + 1], 5, -165796510), i, u, t[h + 6], 9, -1069501632), n, i, t[h + 11], 14, 643717713), c, n, t[h + 0], 20, -373897302), u = o(u, c = o(c, n = o(n, i, u, c, t[h + 5], 5, -701558691), i, u, t[h + 10], 9, 38016083), n, i, t[h + 15], 14, -660478335), c, n, t[h + 4], 20, -405537848), u = o(u, c = o(c, n = o(n, i, u, c, t[h + 9], 5, 568446438), i, u, t[h + 14], 9, -1019803690), n, i, t[h + 3], 14, -187363961), c, n, t[h + 8], 20, 1163531501), u = o(u, c = o(c, n = o(n, i, u, c, t[h + 13], 5, -1444681467), i, u, t[h + 2], 9, -51403784), n, i, t[h + 7], 14, 1735328473), c, n, t[h + 12], 20, -1926607734), u = l(u, c = l(c, n = l(n, i, u, c, t[h + 5], 4, -378558), i, u, t[h + 8], 11, -2022574463), n, i, t[h + 11], 16, 1839030562), c, n, t[h + 14], 23, -35309556), u = l(u, c = l(c, n = l(n, i, u, c, t[h + 1], 4, -1530992060), i, u, t[h + 4], 11, 1272893353), n, i, t[h + 7], 16, -155497632), c, n, t[h + 10], 23, -1094730640), u = l(u, c = l(c, n = l(n, i, u, c, t[h + 13], 4, 681279174), i, u, t[h + 0], 11, -358537222), n, i, t[h + 3], 16, -722521979), c, n, t[h + 6], 23, 76029189), u = l(u, c = l(c, n = l(n, i, u, c, t[h + 9], 4, -640364487), i, u, t[h + 12], 11, -421815835), n, i, t[h + 15], 16, 530742520), c, n, t[h + 2], 23, -995338651), u = s(u, c = s(c, n = s(n, i, u, c, t[h + 0], 6, -198630844), i, u, t[h + 7], 10, 1126891415), n, i, t[h + 14], 15, -1416354905), c, n, t[h + 5], 21, -57434055), u = s(u, c = s(c, n = s(n, i, u, c, t[h + 12], 6, 1700485571), i, u, t[h + 3], 10, -1894986606), n, i, t[h + 10], 15, -1051523), c, n, t[h + 1], 21, -2054922799), u = s(u, c = s(c, n = s(n, i, u, c, t[h + 8], 6, 1873313359), i, u, t[h + 15], 10, -30611744), n, i, t[h + 6], 15, -1560198380), c, n, t[h + 13], 21, 1309151649), u = s(u, c = s(c, n = s(n, i, u, c, t[h + 4], 6, -145523070), i, u, t[h + 11], 10, -1120210379), n, i, t[h + 2], 15, 718787259), c, n, t[h + 9], 21, -343485551),
+                    n = a(n, p),
+                    i = a(i, f),
+                    u = a(u, d),
+                    c = a(c, m)
+            }
+            return Array(n, i, u, c)
+        }(function(t) {
+            for (var e = Array(t.length >> 2), n = 0; n < e.length; n++)
+                e[n] = 0;
+            for (n = 0; n < 8 * t.length; n += 8)
+                e[n >> 5] |= (255 & t.charCodeAt(n / 8)) << n % 32;
+            return e
+        }(u = n + (c = parseInt(c % 1e3 + "")) + t), 8 * u.length))) + "__" + c
+    }
+</script>
+
+<body>
+    <header class="nav">
+        <h4 class="title">中大南方选课助手</h4>
+    </header>
+    <div id="app">
+        <el-alert :title="nowtime" type="info" show-icon>
+        </el-alert>
+        <el-input v-model="user" placeholder="学号"></el-input>
+        <br></br>
+        <el-input v-model="password" placeholder="密码" show-password></el-input>
+
+        <br></br>
+        <el-date-picker v-model="time" type="datetime" placeholder="选择日期时间" format="yyyy-MM-dd HH:mm:ss" type="datetime">
+        </el-date-picker>
+        <el-tooltip class="item" effect="dark" content="到达此时间开始自动抢课" placement="right">
+            <el-button>开始时间</el-button>
+        </el-tooltip>
+        <br></br>
+        <el-alert title="建议在开始前一分钟内开启" type="error">
+        </el-alert>
+        <div style="width: 100%;height: 5px"></div>
+        <el-alert title="东哥温馨提示:填好账号密码,设置好要开始的选课时间、保存设置即可、抢完关闭即可。" type="info">
+        </el-alert>
+        <br></br>
+        <el-divider></el-divider>
+        <div class="btn_group">
+            <el-button type="primary" v-on:click="start()">保存设置</el-button>
+        </div>
+        <el-drawer id="output" :visible.sync="drawer" :with-header="false">
+
+            <div class="output_wrap">
+                <el-scrollbar style="flex:1;flex-shrink: 0;height: 0;">
+                    <br></br>
+                    <el-timeline style="padding-right: 30px;" :reverse="true">
+                        <el-timeline-item :timestamp="message.time" v-for="(message, index) in messages" :key="index" placement="top">
+                            <el-card>
+                                <h4>{{message.content}}</h4>
+                                <p>{{message.time}}</p>
+                            </el-card>
+                        </el-timeline-item>
+                    </el-timeline>
+                </el-scrollbar>
+            </div>
+        </el-drawer>
+    </div>
+</body>
+<script>
+    vm = new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                user: '',
+                password: '',
+                time: '',
+                drawer: false,
+                jwtToken: '',
+                pcId: 0,
+                rd: '',
+                nowtime: "",
+                messages: [
+                    //     {
+                    //      time: 'FuckTime',
+                    //      content: "Fuck"
+                    // }
+                ],
+                course: [
+
+                ]
+            }
+        },
+        mounted: function() {
+            this.getTime()
+        },
+        methods: {
+            randomString(t) {
+                t = t || 32;
+                for (var e = "oOLlABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz0123456789.", n = e.length, i = "", r = 0; r < t; r++)
+                    i += e.charAt(Math.floor(Math.random() * n));
+                return i
+            },
+            timestampToTime(timestamp) {
+                var date = new Date(timestamp * 1000); //时间戳为10位需*1000，时间戳为13位的话不需乘1000
+                var Y = date.getFullYear() + '-';
+                var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+                var D = date.getDate() + ' ';
+                var h = date.getHours() + ':';
+                var m = date.getMinutes() + ':';
+                var s = (date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds());
+                return Y + M + D + h + m + s;
+            },
+            getTime() {
+                setInterval(() => {
+                    $.get("http://127.0.0.1:88/now", (data, status) => {
+                        this.$set(vm, "nowtime", this.timestampToTime(data))
+                    })
+                }, 1000)
+            },
+            watchTime() {
+                let t = setInterval(() => {
+                    let nowTime = new Date().toString()
+                    let pos = nowTime.indexOf(this.time)
+                    console.log(nowTime, this.time)
+                    if (this.time.toString().length > 0 && pos >= 0) {
+                        setInterval(() => {
+                            this.commit()
+                        }, 2000)
+                        clearInterval(t)
+                    }
+                }, 100)
+            },
+            commit() {
+                let e = (new Date).getTime();
+                var i = (new Date).getTime();
+                let timeOffset = (2 * parseFloat(this.nowtime.toString()) * 1e3 - e - i) / 2
+                timeOffset = -Math.ceil(Math.random() * 50)
+                let pass = FuckPass(this.rd, timeOffset)
+                $.get("http://127.0.0.1:88/submit?" + "jwtToken=" + this.jwtToken + "&" + "course=" + JSON.stringify(this.course) + "&" + "pcid=" + this.pcId + "&" + "pass=" + pass + "&" + "rd=" + this.rd, (data, status) => {
+                    this.addTip(data.msg.errMsg[0].msg)
+                })
+            },
+            do() {
+                rd = this.randomString(10)
+                this.$set(vm, "rd", rd)
+                param = "username" + "=" + this.user + "&" + "password" + "=" + this.password + "&" + "rd=" + this.rd
+                console.log(rd)
+                $.get("http://127.0.0.1:88/login?" + param, (data, status) => {
+                    console.log(data)
+                    if (data.err == 0 && data.msg.length >= 10) {
+                        this.$set(vm, 'jwtToken', data.msg)
+                        this.addTip("登录成功")
+                        $.get("http://127.0.0.1:88/getPcId?" + "jwtToken=" + this.jwtToken, (data, status) => {
+                            console.log(data)
+                            let fxpcid = data.msg[0].fxpcid;
+                            if (fxpcid != undefined && fxpcid != 0) {
+                                this.$set(vm, 'pcId', fxpcid)
+                                console.log(fxpcid)
+                                $.get("http://127.0.0.1:88/course?" + "jwtToken=" + this.jwtToken + "&" + "pcid=" + this.pcId, (data, status) => {
+                                    console.log(data)
+                                    if (data.err == 0) {
+                                        this.addTip("获取到关注列表共" + data.msg.length + "门课")
+
+                                        let courseId = new Array();
+                                        for (let i = 0; i < data.msg.length; i++) {
+                                            courseId.push(data.msg[i].id)
+                                        }
+                                        this.$set(vm, 'course', courseId)
+                                        this.watchTime()
+                                            // setInterval(() => {
+                                            //     let e = (new Date).getTime();
+                                            //     var i = (new Date).getTime();
+                                            //     let timeOffset = (2 * parseFloat(this.nowtime.toString()) * 1e3 - e - i) / 2
+                                            //     timeOffset = -Math.ceil(Math.random() * 50)
+                                            //     console.log(timeOffset)
+                                            //     let pass = FuckPass(this.rd, timeOffset)
+                                            //     $.get("http://127.0.0.1:88/submit?" + "jwtToken=" + this.jwtToken + "&" + "course=" + JSON.stringify(courseId) + "&" + "pcid=" + this.pcId + "&" + "pass=" + pass + "&" + "rd=" + this.rd, (data, status) => {
+                                            //         this.addTip(data.msg.errMsg[0].msg)
+                                            //     })
+                                            // }, 1000)
+                                            //this.commit()
+
+                                    }
+                                })
+                            }
+                        })
+
+                    } else {
+                        this.addTip("登录失败:" + data.msg)
+                        setTimeout(() => {
+                            this.do()
+                        }, 1000)
+                    }
+                })
+            },
+            start() {
+                if (this.time.length === 0) {
+                    alert("选时间")
+                    return;
+                }
+                this.$set(vm, 'drawer', true)
+                this.do()
+
+
+                // time = setInterval(() => {
+                //     request = new XMLHttpRequest();
+                //     param = "username" + "=" + this.user + "&" + "password" + "=" + this.password
+                //     request.open("GET", "http://127.0.0.1:88/login?" + param, false)
+                //     request.send()
+                //     respObj = JSON.parse(request.responseText)
+                //     console.log(respObj)
+                //     if (respObj.err == 0 && respObj.msg.length >= 10) {
+                //         this.$set(vm, 'jwtToken', respObj.msg)
+                //         console.log(respObj.msg)
+                //         this.addTip("登录成功")
+                //         this.addTip("获取关注课程")
+                //         $.get("http://127.0.0.1:88/course?jwtToken=" + this.jwtToken, (data, status) => {
+                //             console.log(data, status)
+                //         })
+                //         clearInterval(time)
+
+                //     } else {
+                //         this.addTip("登录失败:" + respObj.msg)
+                //     }
+                // }, 100)
+            },
+            addTip(tips) {
+                var msgArray = this.messages
+                msgArray.push({
+                    content: tips,
+                    time: new Date().toLocaleString()
+                })
+                this.$set(vm, 'messages', msgArray)
+            }
+        }
+
+    })
+    console.log(FuckPass("phmxakaxn3", -2128.5))
+</script>
+
+</html>
