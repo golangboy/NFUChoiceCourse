@@ -1,4 +1,4 @@
-module awesomeProject8
+module github.com/blacknight2018/NFUChoiceCourse
 
 go 1.15
 
